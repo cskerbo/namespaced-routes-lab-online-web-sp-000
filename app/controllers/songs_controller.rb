@@ -28,8 +28,7 @@ class SongsController < ApplicationController
     if Preference.new.allow_create_songs
       @song = Song.new
     else
-      redirect_to songs_path
-      alert: "You don't have permission to create a song."
+      redirect_to songs_path, alert: "You don't have permission to create a song."
     end
   end
 
