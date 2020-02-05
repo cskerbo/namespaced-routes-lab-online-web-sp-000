@@ -1,6 +1,6 @@
 <ul>
 <% @preferences.each do |preference| %>
-  <li><%= link_to preference.id, admin_preferences_path(preference) %></li>
+  <li><%= link_to preference.id, admin_preference_path(preference) %></li>
 <% end %>
 </ul>
 <br>
