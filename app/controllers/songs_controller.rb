@@ -29,6 +29,7 @@ class SongsController < ApplicationController
       @song = Song.new
     else
       redirect_to songs_path
+      alert: "You don't have permission to create a song."
     end
   end
 
