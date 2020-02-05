@@ -27,7 +27,6 @@ class SongsController < ApplicationController
 
   def new
     if Preference.new.allow_create_songs
-      binding.pry
       @song = Song.new
     else
       redirect_to songs_path
